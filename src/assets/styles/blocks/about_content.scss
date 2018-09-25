@@ -1,0 +1,123 @@
+.about_content {
+    display: flex;
+    height: 100vh;
+}
+.left_block {
+    position: relative;
+    width: 50%;
+    background-color: #f2f0e8;
+    &_content {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.about_me {
+    width: 100%;
+    &_block {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    &_star {
+    background: url() center center/cover no-repeat;
+    }
+    &_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Sansus';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 63px;
+    }
+}
+.star_img {
+    width: 280px;
+    height: 180px;
+}
+.who_i {
+    width: 50%;
+}
+.avatar_block {
+    margin-right: 50px;
+}
+.avatar_img {
+    width: 440px;
+    height: 390px;
+}
+.avatar_caption_block {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.avatar_caption {
+    margin-top: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    width: 90px;
+    border-bottom: 3px solid #9c9d9f;
+    font-family: 'Sansus';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 35px;
+}
+.avatar_text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+.right_block {
+    width: 50%;
+    background-color: #eae8e2;
+    position: relative;
+    padding: 0px 35px;
+}
+
+.my_skill {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    &_i {
+    font-family: 'Sansus';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    &:after {
+        content: '';
+        width: 90px;
+        height: 3px;
+        background-color: #878e9e;
+        display: block;
+        margin: 30px 0px;
+    }
+    }
+    &_block {
+        padding-top:10px;
+    }
+    &_item {
+        padding-bottom: 10px;
+    }
+}
+.skill_titel {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 28px;
+}
+.my_skill_text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+}

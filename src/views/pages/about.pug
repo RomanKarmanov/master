@@ -1,0 +1,82 @@
+extends ../main.layout.pug
+
+block variables
+  - var title = 'About me'
+  - var name = 'Роман Карманов'
+  - var text = 'Личный сайт веб разработчика'
+
+block content
+  section.about_block
+    .social_block
+      include ../common/social.pug
+    .about_author
+      include ../common/author.pug
+    svg.burger_block
+      use(xlink:href="assets/images/icons/sprite.svg#hamburger")
+    .arrow_block
+      svg.arrow
+        use(xlink:href="assets/images/icons/sprite.svg#arrow_down")
+    svg.triangles(viewBox="0 0 1200 108" preserveAspectRatio="xMinYMax")
+            polygon.triangle_left(points="0,0 0,108 601,108 601,105" fill="#f2f0e8")
+            polygon.triangle_right(points="1200,0 1200,108 599,108 599,105" fill="#eae8e2")
+  section.about_content
+    .left_block
+      .left_block_content
+        .about_me
+          .about_me_block
+            img.star_img(src="../../assets/images/bg/stars2_about.png", alt="star")
+            .about_me_text ОБО МНЕ
+        .who_i
+          .avatar_block
+            img.avatar_img(src="assets/images/content/author_more.jpg", alt="avatar")
+            .avatar_caption_block  
+              .avatar_caption КТО Я
+            .avatar_text Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+    .right_block
+      .my_skill  
+        .my_skill_i ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
+      .my_skill_text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+      .my_skill_block
+        ul.my_skill_list
+          -
+            var skills = [
+              ['Frontend', ['Html', 'css', 'JavaScript']],
+              ['Backend', ['Php', 'mySQL', 'Node.js & npm', 'Mongo.db']],
+              ['Workflow',['Git', 'Gulp', 'Webpack']],
+            ] 
+          each item in skills
+            li.my_skill_item
+              .skill_block
+                .skill_titel #{item[0]}
+                ul.skill_list
+                  each skill in item[1]
+                    li.skill_elem
+                      svg.skill(viewBox='0 0 100 100' preserveAspextRatio='none') #{skill}
+                        circle(cx='50' cy='50' r='35' class='circle circle_under')
+                        circle(cx='50' cy='50' r='35' class='circle circle_tracing')
+  section.contact
+    .map_block#map
+    .contact_block
+      .contact_block_elem
+        .contact_titel КОНТАКТЫ
+      ul.contact_list
+        li.contact_item
+          svg.svg_contact
+            use(xlink:href="assets/images/icons/sprite.svg#skype")
+          .text_contact way-g5524
+        li.contact_item
+          svg.svg_contact
+            use(xlink:href="assets/images/icons/sprite.svg#phone")
+          .text_contact +79042057113
+        li.contact_item
+          svg.svg_contact
+            use(xlink:href="assets/images/icons/sprite.svg#envelope_n")
+          .text_contact way_g@mail.ru
+        li.contact_item
+          svg.svg_contact
+            use(xlink:href="assets/images/icons/sprite.svg#map_marker")
+          .text_contact Сосногорск, 6 микрорайон, д. 1
+    include ../common/footer.pug
+
+
+

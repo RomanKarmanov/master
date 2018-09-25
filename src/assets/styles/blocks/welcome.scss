@@ -1,0 +1,119 @@
+.welcome {
+    background: url(assets/images/bg/hero.jpg) center center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.welcome_btn {
+    float: right;
+    margin-top: 20px;
+    margin-right: 100px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 14px 28px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    &:hover {
+        background-color: #083c96;
+        transition: 0.3s;
+    }
+}
+.welcome_block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    height: 395px;
+    width: 380px;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #1c1f29;
+        opacity: 0.5;
+        z-index: -1;
+    }
+}
+.author {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    &_name {
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    }
+    &_text {
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    }
+}
+.welcome_social {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    &_block {
+        display: flex;
+        justify-content: space-between;
+        width: 140px;
+    }
+}
+.social {
+    height: 30px;
+    width: 30px;
+    fill: #0a46ab;
+    &:hover {
+        fill: #fff;
+        transition: 0.3s;
+    }
+}
+.welcome_link_block {
+    width: 100%;
+    height: 45px;
+    display: flex;
+}
+.link {
+    text-decoration: none;
+    width: 100%;
+    // padding: 10px 30px;
+    color: #fff;
+    background-color: #0548be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #7296d2;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    &:hover {
+        background-color: #083c96;
+        transition: 0.3s;
+    }
+    &:last-child {
+        border: none;
+    }
+}
+.made_author {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+.footer_author {
+    color: #fff;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}

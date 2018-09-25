@@ -1,0 +1,77 @@
+extends ../main.layout.pug
+
+block variables
+  - var title = 'My works'
+  - var name = 'Роман Карманов'
+  - var text = 'Личный сайт веб разработчика'
+
+block content
+ section.works_block
+    .social_block
+      include ../common/social.pug
+    .about_author
+      include ../common/author.pug
+    svg.burger_block
+      use(xlink:href="assets/images/icons/sprite.svg#hamburger")
+    .arrow_block.arrow_block-works
+      svg.arrow
+        use(xlink:href="assets/images/icons/sprite.svg#arrow_down")
+    svg.triangles.triangles-works(viewBox="0 0 1200 240" preserveAspectRatio="xMinYMax")
+          polygon.triangleBlog(points="0,0 0,100000 601,108 601,105")
+          polygon.triangleBlog(points="1200,0 1200,100000 599,108 599,105")
+    .my_work_block
+      .img_star_work
+        img.star_img(src="assets/images/bg/stars2.png", alt="star")
+        .img_star_work_text МОИ РАБОТЫ
+ section.my_work
+    .site_school
+      .site_school_block
+        .site_block
+          h2.site САЙТ ШКОЛЫ ОНЛАЙН ОБРАЗОВАНИЯ
+        .discipline HTML, CSS, JAVASCRIPT
+        a.link_site_btn(href="#")
+          svg.link_svg
+            use(xlink:href="assets/images/icons/sprite.svg#link")
+          .link_text Посмотреть сайт
+    .my_work_slider.js-work_slider
+      
+ section.communication
+  .what_about_me
+    .what_about_me_center
+      img.img_stars_three(src="assets/images/bg/stars3.png" alt="stars3")
+      .what_about_me_titel ЧТО ОБО МНЕ ГОВОРЯТ
+  .block_teachers
+    .block_founder 
+      img.img_quote(src="assets/images/bg/quote.png" alt="quote")
+      .img_founder_block
+        img.img_founder(src="assets/images/content/founder.png" alt="founder")
+      .founder_text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+      .founder_quote
+        .name_founder Ковальчук Дмитрий
+        span.founder_loftschool - Основатель Loftchool
+    .block_founder
+      img.img_quote(src="assets/images/bg/quote.png" alt="quote")
+      .img_founder_block
+        img.img_founder(src="assets/images/content/teachers.png" alt="founder")
+      .founder_text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+      .founder_quote
+        .name_founder Сабанцев Владимир
+        span.founder_loftschool - предподаватель
+  .block_communication
+    .block_communication_me
+      .communication_coption_block
+        .communication_coption СВЯЗАТЬСЯ СО МНОЙ
+      forma.forma
+        lebel.lebel
+          input.input(type="text" name="name" placeholder="Ваше имя")
+        lebel.lebel
+          input.input(type="email", name="email" placeholder="Ваш email")
+        lebel.lebel
+          textarea.textarea(name="textarea" placeholder="Ваше сообщение")
+        lebel.lebel
+          input.btn.btn_send(type="button" value="Отправить")
+          input.btn.btn_clean(type="reset" value="Очистить")
+  .block_arrow_up
+    svg.svg_star_three
+      use(xlink:href="assets/images/icons/sprite.svg#portf_arrow_up")
+  include ../common/footer.pug

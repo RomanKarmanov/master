@@ -1,0 +1,21 @@
+extends ../auth.layout.pug
+
+block variables
+  - var title = 'Welcome'
+  - var name = 'Роман Карманов'
+  - var text = 'Личный сайт веб разработчика'
+
+block content
+  .welcome
+    a.welcome_btn(href="#") Авторизоваться
+    .welcome_block
+      .author_block
+        include ../common/author.pug
+      .welcome_social
+        include ../common/social.pug
+      .welcome_link_block
+        a.link(href="#") Мои работы
+        a.link(href="#") Обо мне
+        a.link(href="#") Блог
+    .made_author
+      include ../common/made_author.pug
