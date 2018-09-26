@@ -6,38 +6,38 @@ block variables
   - var text = 'Личный сайт веб разработчика'
 
 block content
-  section.about_block
-    .social_block
+  header.header-about
+    .about_social
       include ../common/social.pug
     .about_author
       include ../common/author.pug
-    svg.burger_block
+    svg.burger
       use(xlink:href="assets/images/icons/sprite.svg#hamburger")
-    .arrow_block
-      svg.arrow
+    .arrow
+      svg.about_arrow-dawn
         use(xlink:href="assets/images/icons/sprite.svg#arrow_down")
     svg.triangles(viewBox="0 0 1200 108" preserveAspectRatio="xMinYMax")
             polygon.triangle_left(points="0,0 0,108 601,108 601,105" fill="#f2f0e8")
             polygon.triangle_right(points="1200,0 1200,108 599,108 599,105" fill="#eae8e2")
   section.about_content
     .left_block
-      .left_block_content
-        .about_me
-          .about_me_block
+      .left_elem
+        .about-me
+          .about-me__content
             img.star_img(src="../../assets/images/bg/stars2_about.png", alt="star")
-            .about_me_text ОБО МНЕ
-        .who_i
-          .avatar_block
-            img.avatar_img(src="assets/images/content/author_more.jpg", alt="avatar")
-            .avatar_caption_block  
+            .about-me__text ОБО МНЕ
+        .who-i
+          .who-i__avatar
+            img.avatar-img(src="assets/images/content/author_more.jpg", alt="avatar")
+            .who-i__caption  
               .avatar_caption КТО Я
-            .avatar_text Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+            .who-i__text Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
     .right_block
-      .my_skill  
-        .my_skill_i ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
-      .my_skill_text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
-      .my_skill_block
-        ul.my_skill_list
+      .my-skill
+        .my-skill__caption ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
+      .my-skill__text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+      .my-skill__ability
+        ul.my-skill__list
           -
             var skills = [
               ['Frontend', ['Html', 'css', 'JavaScript']],
@@ -45,7 +45,7 @@ block content
               ['Workflow',['Git', 'Gulp', 'Webpack']],
             ] 
           each item in skills
-            li.my_skill_item
+            li.my-skill__item
               .skill_block
                 .skill_titel #{item[0]}
                 ul.skill_list
@@ -78,5 +78,8 @@ block content
           .text_contact Сосногорск, 6 микрорайон, д. 1
     include ../common/footer.pug
 
+block scripts
+
+  script(src="about.bundle.js")
 
 

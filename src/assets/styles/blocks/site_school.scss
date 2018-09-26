@@ -1,0 +1,59 @@
+.site-school {
+  background-color: #f2f0e8;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  &__caption {
+      display: flex;
+      flex-direction: column;
+  }
+  &__discipline {
+      font-family: 'Roboto';
+      font-weight: 500;
+      color:#466cac;
+  }
+  &__titel {
+      font-family: 'Sansus';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:after {
+          content: '';
+          height: 3px;
+          width: 90px;
+          background-color: #9c9d9f;
+          display: block;
+          margin: 30px 0px;
+          }
+      }
+}
+.link_site_btn {
+  width: 200px;
+  height: 45px;
+  display: flex;
+  margin-top: 60px;
+  padding: 13px 20px;
+  text-decoration: none;
+  background-color: #004cd1;
+}
+.link_svg {
+  height: 20px;
+  width: 20px;
+  fill: #fff;
+}
+.link_text {
+  margin-left: 10px;
+  color: #fff;
+}

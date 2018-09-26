@@ -6,61 +6,62 @@ block variables
   - var text = 'Личный сайт веб разработчика'
 
 block content
- section.works_block
-    .social_block
+ section.works
+    .about_social
       include ../common/social.pug
     .about_author
       include ../common/author.pug
-    svg.burger_block
+    svg.burger
       use(xlink:href="assets/images/icons/sprite.svg#hamburger")
-    .arrow_block.arrow_block-works
-      svg.arrow
+    .arrow
+      svg.about_arrow-dawn.arrow-works
         use(xlink:href="assets/images/icons/sprite.svg#arrow_down")
     svg.triangles.triangles-works(viewBox="0 0 1200 240" preserveAspectRatio="xMinYMax")
           polygon.triangleBlog(points="0,0 0,100000 601,108 601,105")
           polygon.triangleBlog(points="1200,0 1200,100000 599,108 599,105")
-    .my_work_block
-      .img_star_work
+    .my-work
+      .my-work__star
         img.star_img(src="assets/images/bg/stars2.png", alt="star")
-        .img_star_work_text МОИ РАБОТЫ
- section.my_work
-    .site_school
-      .site_school_block
-        .site_block
-          h2.site САЙТ ШКОЛЫ ОНЛАЙН ОБРАЗОВАНИЯ
-        .discipline HTML, CSS, JAVASCRIPT
+        .my-work__titel МОИ РАБОТЫ
+ section.presentation-work
+    .site-school
+      .site-school__content
+        .site-school__caption
+          h2.site-school__titel САЙТ ШКОЛЫ ОНЛАЙН ОБРАЗОВАНИЯ
+        .site-school__discipline HTML, CSS, JAVASCRIPT
         a.link_site_btn(href="#")
           svg.link_svg
             use(xlink:href="assets/images/icons/sprite.svg#link")
           .link_text Посмотреть сайт
-    .my_work_slider.js-work_slider
-      
+    .work_slider.js-work_slider
+      .slider__main-slider.js-main-slider
+      .slider__up-slider.js-scroll-up
+      .slider__down-slider.js-scroll-down
  section.communication
-  .what_about_me
-    .what_about_me_center
+  .what-about-me
+    .what-about-me__caption
       img.img_stars_three(src="assets/images/bg/stars3.png" alt="stars3")
-      .what_about_me_titel ЧТО ОБО МНЕ ГОВОРЯТ
-  .block_teachers
-    .block_founder 
+      .what_about_me__text ЧТО ОБО МНЕ ГОВОРЯТ
+  .teachers
+    .founder 
       img.img_quote(src="assets/images/bg/quote.png" alt="quote")
-      .img_founder_block
+      .img_founder
         img.img_founder(src="assets/images/content/founder.png" alt="founder")
       .founder_text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
       .founder_quote
         .name_founder Ковальчук Дмитрий
         span.founder_loftschool - Основатель Loftchool
-    .block_founder
+    .founder
       img.img_quote(src="assets/images/bg/quote.png" alt="quote")
-      .img_founder_block
+      .img_founder
         img.img_founder(src="assets/images/content/teachers.png" alt="founder")
       .founder_text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
       .founder_quote
         .name_founder Сабанцев Владимир
         span.founder_loftschool - предподаватель
-  .block_communication
-    .block_communication_me
-      .communication_coption_block
-        .communication_coption СВЯЗАТЬСЯ СО МНОЙ
+  .way-communication
+    .way-communication_me
+      .way-communication_caption СВЯЗАТЬСЯ СО МНОЙ
       forma.forma
         lebel.lebel
           input.input(type="text" name="name" placeholder="Ваше имя")
@@ -71,7 +72,11 @@ block content
         lebel.lebel
           input.btn.btn_send(type="button" value="Отправить")
           input.btn.btn_clean(type="reset" value="Очистить")
-  .block_arrow_up
+  .arrow_up
     svg.svg_star_three
       use(xlink:href="assets/images/icons/sprite.svg#portf_arrow_up")
   include ../common/footer.pug
+
+block scripts
+
+ script(src="works.bundle.js")

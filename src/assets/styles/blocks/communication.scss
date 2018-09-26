@@ -3,17 +3,17 @@
     height: 1350px;
     position: relative;
 }
-.what_about_me {
+.what-about-me {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.what_about_me_center {
+.what-about-me__caption {
     position: relative;
     width: 730px;
     text-align: center;
 }
-.what_about_me_titel {
+.what_about_me__text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -24,12 +24,12 @@
     font-size: 63px;
     color:#fff;
 }
-.block_teachers {
+.teachers {
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.block_founder {
+.founder {
     width: 400px;
     height: 250px;
     text-align: center;
@@ -64,113 +64,8 @@
     font-size: 16px;
     color: #fff;
 }
-.block_communication {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 45%;
-    align-items: center;
-}
-.block_communication_me {
-    height: 500px;
-    width: 380px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    z-index: 1;
-    position: relative;
-    
-    &:after {
-        content: '';
-        width: 100%;
-        height: 100%;
-        background-color: #fff;
-        opacity: 0.05;
-        position: absolute;
-        z-index: -1;
-    }
-}
-.communication_coption {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'Sansus';
-    font-size: 35px;
-    color:#fff;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-    &:after {
-        content: '';
-        height: 3px;
-        width: 90px;
-        background-color: #888783;
-        display: block;
-        margin: 30px 0px;
-    }
-}
-.forma {
-    display: flex;
-    flex-direction: column;
-}
-.lebel {
-    margin-bottom: 20px;
-    width: 100%;
-    &:last-child {
-        margin-bottom: 0px;
-    } 
-}
-.input {
-    width: 80%;
-    position: relative;
-    border: none;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    color: #959898;
-    background-color: #fff;
-        opacity: 0.07;
-    z-index: 1;
-    padding: 15px 15px;
-    // &:after {
-    //     content: '';
-    //     width: 100%;
-    //     height: 100%;
-    //     display: block;
-        
-    //     position: absolute;
-    //     z-index: -1;
-    // }
-}
-.textarea {
-    width: 80%;
-    height: 130px;
-    background-color: #fff;
-    opacity: 0.07;
-    border: none;
-    color: #959898;
-    padding: 15px 15px;
-    resize: none;
-    outline: none
-}
-.btn {
-    height: 45px;
-    cursor: pointer;
-    
-    &_send {
-        width: 50%;
-        background-color: #004cd1;
-        border:none;
-    }
-    &_clean {
-        width: 50%;
-        background: transparent;
-        color:#fff;
-        border: none;
-    }
-}
-.block_arrow_up {
+
+.arrow_up {
     width: 100%;
     text-align: center;
 }

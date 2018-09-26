@@ -1,4 +1,4 @@
-.blog_block {
+.blog {
     background: url(assets/images/bg/hero.jpg) center center/cover no-repeat;
     height: 650px;
     width: 100%;
@@ -12,12 +12,12 @@
 .triangleBlog {
     fill:#faf8f0;
 }
-.blog_content {
+.blog-content {
     position: relative;
     display: flex;
     width: 100%;
 }
-.topics_block {
+.topics {
     background-color: #faf8f0;
     width: 20%;
     

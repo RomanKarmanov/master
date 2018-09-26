@@ -6,24 +6,21 @@
     position: relative;
     width: 50%;
     background-color: #f2f0e8;
-    &_content {
-        display: flex;
-        justify-content: space-between;
-    }
+}
+.left_elem {
+    display: flex;
+    justify-content: space-between;
 }
 
-.about_me {
+.about-me {
     width: 100%;
-    &_block {
+    &__content {
         width: 100%;
         display: flex;
         justify-content: center;
         position: relative;
     }
-    &_star {
-    background: url() center center/cover no-repeat;
-    }
-    &_text {
+    &__text {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -38,22 +35,29 @@
     width: 280px;
     height: 180px;
 }
-.who_i {
+.who-i {
     width: 50%;
+    &who-i__avatar {
+        margin-right: 50px;
+    }
+    &__caption {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    &__text {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
 }
-.avatar_block {
-    margin-right: 50px;
+
+.avatar-img {
+    max-width: 440px;
+    max-height: 390px;
 }
-.avatar_img {
-    width: 440px;
-    height: 390px;
-}
-.avatar_caption_block {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
+
 .avatar_caption {
     margin-top: 40px;
     padding-bottom: 30px;
@@ -65,11 +69,6 @@
     font-style: normal;
     font-size: 35px;
 }
-.avatar_text {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
 }
 .right_block {
     width: 50%;
@@ -78,12 +77,12 @@
     padding: 0px 35px;
 }
 
-.my_skill {
+.my-skill {
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
-    &_i {
+    &__caption {
     font-family: 'Sansus';
     font-weight: normal;
     font-style: normal;
@@ -92,6 +91,13 @@
     flex-direction: column;
     align-items: center;
     width: 300px;
+    &__text {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+    
+    }
     &:after {
         content: '';
         width: 90px;
@@ -101,10 +107,10 @@
         margin: 30px 0px;
     }
     }
-    &_block {
+    &__ability {
         padding-top:10px;
     }
-    &_item {
+    &__item {
         padding-bottom: 10px;
     }
 }
@@ -113,11 +119,4 @@
     font-weight: 500;
     font-style: normal;
     font-size: 28px;
-}
-.my_skill_text {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-
 }

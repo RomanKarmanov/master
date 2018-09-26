@@ -6,18 +6,18 @@ block variables
   - var text = 'Статьи, которые я написал'
 
 block content
-    section.blog_block
-        .social_block
+    header.blog
+        .about_social
             include ../common/social.pug
         .about_author
             include ../common/author.pug
-        svg.burger_block
+        svg.burger
             use(xlink:href="assets/images/icons/sprite.svg#hamburger")
         svg.triangles(viewBox="0 0 1200 108" preserveAspectRatio="xMinYMax")
             polygon.triangleBlog(points="0,0 0,108 601,108 601,105")
             polygon.triangleBlog(points="1200,0 1200,108 599,108 599,105")
-    section.blog_content
-        .topics_block
+    section.blog-content
+        aside.topics
             ul.thems_list
                 li.topics_item.topics_item-active
                     a.topics_link(href="#") Почему я стал программистом
@@ -51,3 +51,7 @@ block content
                 .data_publications 20 декабря 2020
                 .theme_text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus illum nisi ipsam ullam voluptas, ex optio recusandae, velit quibusdam rem, vero unde provident quis necessitatibus id laboriosam eius quisquam minima sit cupiditate alias officia? Nisi atque saepe debitis harum deserunt illo perferendis modi! Eligendi aperiam repudiandae a. Numquam quis a nisi voluptatem expedita incidunt inventore molestias officiis deleniti? Itaque odio sed illo cupiditate natus incidunt blanditiis dignissimos expedita in at, adipisci dolorum facilis, voluptas fugiat a soluta, asperiores possimus quidem maxime? Quia maxime, optio iusto nihil itaque quibusdam exercitationem a et doloribus repellat suscipit distinctio ad architecto earum repellendus ex! Quos eveniet cumque ipsa voluptatem corrupti nemo reiciendis provident harum, repellendus labore ipsam fugiat possimus recusandae facilis pariatur quasi illo saepe? Voluptas, perferendis iusto maiores explicabo labore eius illo, dignissimos aut accusantium, veniam dolore! Nesciunt quibusdam totam nemo architecto explicabo reprehenderit! Recusandae assumenda, repellat quo impedit inventore accusamus. Earum voluptates itaque impedit, deserunt soluta ipsa. Laudantium aspernatur quaerat quod quae laborum accusantium molestiae inventore reiciendis rerum! Quidem, soluta iste! Expedita molestiae, doloribus perferendis nemo officiis eveniet consequuntur alias a hic nesciunt fugit vero odit sit velit veniam possimus commodi eum doloremque architecto. Necessitatibus sit optio molestias officiis impedit nemo obcaecati architecto veritatis labore modi distinctio, ipsum ipsam tempora non eum deleniti magnam, consectetur harum sequi ducimus a nam possimus mollitia nesciunt. Eos delectus animi nulla fuga eaque, dolorum sequi nobis atque fugit odio, mollitia quia corporis eligendi, id iste pariatur commodi voluptates ea ratione minima necessitatibus itaque doloremque vitae quibusdam. Suscipit molestias nobis iure autem quod nisi excepturi neque unde ea, minima eligendi sapiente dolorem explicabo repellat pariatur ipsum eos beatae numquam assumenda. Quod corrupti officia assumenda, illum minima laudantium, et, quaerat nisi obcaecati enim delectus similique? Iure est eos necessitatibus voluptatem alias ex, maxime ducimus et fuga rerum voluptas optio officia corrupti. Quaerat quo placeat obcaecati saepe officia quos labore temporibus itaque ratione, libero non eveniet dolor et consectetur consequuntur maiores. Aperiam non minus, accusantium cum praesentium facere asperiores quod ipsum corrupti exercitationem maiores vel id sapiente deleniti ipsam cupiditate! Inventore, sit fuga. Consequuntur voluptatum similique asperiores non a blanditiis aspernatur expedita hic ex vel nam soluta itaque, reprehenderit nesciunt sunt necessitatibus voluptatem ea aperiam impedit numquam! Est beatae ex quas perspiciatis, porro fuga voluptas recusandae. Veniam expedita atque id aperiam eum odio amet reiciendis magnam excepturi earum? Ab quisquam rerum temporibus, ad voluptatum sed tempora tenetur obcaecati, optio voluptatem velit molestiae provident corrupti hic quia consequatur. Sapiente totam quam odit qui alias? Accusantium vitae reiciendis odit aut, sint fugit quia quibusdam dolorem, consequuntur eveniet tenetur laborum suscipit nihil minus! Nemo eos iste non iusto, cum ipsa, ullam dolores, iure provident neque magnam doloribus porro quia velit quibusdam molestiae voluptatem impedit dicta architecto quae ea incidunt eius. Natus earum quidem ea nam, unde repudiandae repellat porro minus, quisquam dicta magni quibusdam molestiae iste. Architecto, vel amet. Consectetur autem accusamus id ratione odio ex provident? Quisquam praesentium, repellendus earum assumenda eos laudantium aut vel? Incidunt accusamus non assumenda dolorum.
         include ../common/footer.pug
+
+block scripts
+
+    script(src="blog.bundle.js")

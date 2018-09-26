@@ -1,9 +1,9 @@
-.about_block {
+.header-about {
     background: url(assets/images/bg/hero.jpg) center center/cover no-repeat;
     height: 100vh;
     position: relative;
 }
-.social_block {
+.about_social {
     position: absolute;
     margin: 30px 30px;
 }
@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: flex-end;
 }
-.burger_block {
+.burger {
     width: 40px;
     height: 35px;
     display: flex;
@@ -33,18 +33,17 @@
     top: 30px;
     fill: #fff;
 }
-.arrow_block {
+.arrow {
     position: absolute;
     bottom: 70px;
     width: 100%;
-    text-align: center;
+    fill: #dfdcd5;
     z-index: 1;
+    text-align: center;
 }
-.arrow {
-    fill: #adadb2;
-    width: 28px;
-    height: 18px;
-    cursor: pointer;
+.about_arrow-dawn {
+    width: 27px;
+    height: 17px;
 }
 .skill_list {
     display: flex;

@@ -6,16 +6,17 @@ block variables
   - var text = 'Личный сайт веб разработчика'
 
 block content
-  .welcome
+  section.welcome
     a.welcome_btn(href="#") Авторизоваться
     .welcome_block
-      .author_block
+      .welcome_author-elem
         include ../common/author.pug
-      .welcome_social
+      .welcome_social-elem
         include ../common/social.pug
-      .welcome_link_block
+      .welcome_link-elem
         a.link(href="#") Мои работы
         a.link(href="#") Обо мне
         a.link(href="#") Блог
     .made_author
       include ../common/made_author.pug
+
