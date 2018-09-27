@@ -1,8 +1,5 @@
-// $pc: 1200px;
-// $tablets: 768px;
-// $phones: 480px;
-
 @import 'normalize.css';
+@import './layout/media.scss';
 @import './layout/fonts.scss';
 @import './layout/base.scss';
 @import './blocks/*.scss';

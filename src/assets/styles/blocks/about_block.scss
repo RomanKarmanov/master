@@ -40,10 +40,12 @@
     fill: #dfdcd5;
     z-index: 1;
     text-align: center;
+    
 }
 .about_arrow-dawn {
     width: 27px;
     height: 17px;
+    cursor: pointer;
 }
 .skill_list {
     display: flex;
@@ -53,14 +55,24 @@
     width: 200px;
     height: 200px;
     transform: rotate(-90deg);
+    
 }
 .circle {
     fill:transparent;
     stroke-width: 10px;
     stroke: #dfdcd5;
+    
 }
 .circle_tracing {
     stroke: #165ad1;
     stroke-dasharray: 251;
     stroke-dashoffset: 251;
 }
+// .circle_text {
+//     position: absolute;
+//     transform: rotate(90deg);
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+    
+// }
