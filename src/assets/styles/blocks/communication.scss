@@ -72,8 +72,12 @@
 .svg_star_three {
     width: 28px;
     height: 20px;
-    fill: #888783;
+    fill: #bdc5d3;
     cursor: pointer;
+    &:hover {
+        fill: #fff;
+        transition: 0.3s;
+    }
 }
 .communication .footer_work {
     background-color: initial;

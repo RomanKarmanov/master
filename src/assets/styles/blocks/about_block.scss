@@ -37,7 +37,7 @@
     position: absolute;
     bottom: 70px;
     width: 100%;
-    fill: #dfdcd5;
+    fill: #bdc5d3;
     z-index: 1;
     text-align: center;
     
@@ -46,6 +46,10 @@
     width: 27px;
     height: 17px;
     cursor: pointer;
+    &:hover {
+        fill: #fff;
+        transition: 0.3s;
+    }
 }
 .skill_list {
     display: flex;

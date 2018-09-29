@@ -27,6 +27,7 @@
     &:hover {
         background-color: #083c96;
         transition: 0.3s;
+        border: 1px solid #083c96;
     }
 }
 .welcome_block {
@@ -78,9 +79,9 @@
 .social {
     height: 30px;
     width: 30px;
-    fill: #0a46ab;
+    fill: #fff;
     &:hover {
-        fill: #fff;
+        fill: #004cd1;
         transition: 0.3s;
     }
     &-elem {
