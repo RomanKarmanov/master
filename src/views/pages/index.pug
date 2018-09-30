@@ -9,6 +9,37 @@ block content
   section.welcome
     .welcome_authorize
       a.welcome_btn(href="#") Авторизоваться
+    .auth
+      .auth-title АВТОРИЗУЙТЕСЬ
+      .auth-input__login
+        .svg-auth_background
+          svg.svg-auth
+            use(xlink:href="assets/images/icons/sprite.svg#login")
+        input.input-login(type="text" placeholder="Логин")
+      .auth-input__login
+        .svg-auth_background
+          svg.svg-auth
+            use(xlink:href="assets/images/icons/sprite.svg#password")
+        input.input-password(type="text" placeholder="Пароль")
+      label.checkbox-label
+        input#checkbox(type="checkbox", name="checkbox")
+        .checkbox-elem
+          svg.svg-checkbox
+            use(xlink:href="assets/images/icons/sprite.svg#check")
+        .checkbox-elem__text Я человек
+      .switch__title Вы точно не робот?
+      .switch
+        label.label-swith
+          input.input_swith(type="radio" )
+          .swith_dot
+          .swith__text Да
+        label.label-swith
+          input.input_swith(type="radio" )
+          .swith_dot
+          .swith__text Не уверен
+      .auth-btns
+        input(type="button", value="На главную").button
+        input(type="button", value="Войти").button
     .welcome_block
       .welcome_author-elem
         include ../common/author.pug
