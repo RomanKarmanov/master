@@ -1,0 +1,27 @@
+[
+    {
+        "skillsGroup": "Frontend",
+        "skills": {
+            "HTML5": 40,
+            "CSS3": 35,
+            "javaScript & jQuery": 10
+        }
+    },
+    {
+        "skillsGroup":"Backend",
+        "skills": {
+            "Php": 0,
+            "mySql": 10,
+            "Node.js & npm":20,
+            "Mongo.db": 5
+        }
+    },
+    {
+        "skillsGroup": "WorkFlow",
+        "skills": {
+            "Git": 60,
+            "Gulp": 50,
+            "Yarn": 55
+        }
+    }
+]

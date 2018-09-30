@@ -37,24 +37,7 @@ block content
         .my-skill__caption ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
       .my-skill__text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
       .my-skill__ability
-        ul.my-skill__list
-          -
-            var skills = [
-              ['Frontend', ['Html', 'css', 'JavaScript']],
-              ['Backend', ['Php', 'mySQL', 'Node.js & npm', 'Mongo.db']],
-              ['Workflow',['Git', 'Gulp', 'Webpack']],
-            ] 
-          each item in skills
-            li.my-skill__item
-              .skill_block
-                .skill_titel #{item[0]}
-                ul.skill_list
-                  each skill in item[1]
-                    li.skill_elem
-                      svg.skill(viewBox='0 0 100 100' preserveAspextRatio='none') #{skill}
-                        circle(cx='50' cy='50' r='35' class='circle circle_under')
-                        circle(cx='50' cy='50' r='35' class='circle circle_tracing')
-                        
+        #skills-component
   section.contact
     .map_block#map
     .contact_block
@@ -82,5 +65,3 @@ block content
 block scripts
 
   script(src="about.bundle.js")
-
-
