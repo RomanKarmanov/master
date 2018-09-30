@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Сайт школы онлайн образования",
+        "skills": "HTML, CSS, JavaScript",
+        "photo": "/assets/images/content/work-1.png",
+        "link": "//google.com"
+    },
+    {
+        "id": 2,
+        "title": "Сайт магазина вкусняшек",
+        "skills": "HTML, CSS, JavaScript",
+        "photo": "/assets/images/content/work-2.png",
+        "link": "//yandex.ru"
+    },
+    {
+        "id": 3,
+        "title": "Цветочный магазин",
+        "skills": "HTML, CSS, JavaScript",
+        "photo": "/assets/images/content/work-3.png",
+        "link": "//google.com"
+    }
+]

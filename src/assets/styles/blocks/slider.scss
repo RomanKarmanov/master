@@ -1,0 +1,119 @@
+.presentation-work {
+    height: 100vh;
+}
+.slider {
+    display: grid;
+    grid-template: 
+        "info display" 70%
+        "info buttons" 30%
+        / 1fr 1fr;
+    height: 100%;
+    background-color: #e3e2de;
+}
+.slider__display {
+    grid-area: display;
+    margin: auto;
+}
+.slider__buttons {
+    grid-area: buttons;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.slider__button {
+    width: 50%;
+    display: flex;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      &:before {
+        background: rgba(#e3e2de, .5);
+      }
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(#b1b2ba, .7);
+      transition: .3s;
+      z-index: 10;
+    }
+    &:after {
+      content: "";
+      background: svg-load('arrow_down.svg', fill=#ffffff) center center no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 44px;
+      height: 30px;
+      z-index: 20;
+    }
+  }
+  
+  .slider__button-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .slider__button-img-wrap {
+    height: 100%;
+  }
+  
+  .slider__button-pic {
+    display: block;
+    max-width: 100%;
+    max-height: 90%;
+    margin: auto;
+  }
+  .slider__button_next {
+    width: 50%;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+        &:before {
+          background: rgba(#e3e2de, .5);
+        }
+      }
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(#b1b2ba, .7);
+        transition: .3s;
+        z-index: 10;
+      }
+      &:after {
+        content: "";
+        background: svg-load('arrow_down.svg', fill=#ffffff) center center no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 44px;
+        height: 30px;
+        z-index: 20;
+        transform: rotate(-180deg);
+      }
+  }
+//   .slider__button-img-wrap {
+//     position: absolute;
+//     height: 100%;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }

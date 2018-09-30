@@ -1,0 +1,39 @@
+script(type="text/x-template")#slider-root
+    .slider
+        info(
+            :work="currentWork"
+        )
+        display(
+            :work="currentWork"
+        )
+        btns(
+            @slide="handleSlide"
+            :index="currentIndex"
+            :works="works"
+        )
+
+script(type="text/x-template")#slider-info
+    .site-school
+      .site-school__content
+        .site-school__caption
+          h2.site-school__titel {{work.title}}
+        .site-school__discipline {{work.skills}}
+        a.link_site_btn(:href="work.link")
+          svg.link_svg
+            use(xlink:href="assets/images/icons/sprite.svg#link")
+          .link_text Посмотреть сайт
+
+script(type="text/x-template")#slider-display
+    .slider__display
+        img(:src="work.photo", alt="work").slider__big-pic
+
+script(type="text/x-template")#slider-btns
+    .slider__buttons
+        .slider__button(@click="slide('prev')")
+            .slider__button-container
+                .slider__button-img-wrap
+                    img(:src="prevButtonWorks[index].photo", alt="work").slider__button-pic
+        .slider_button.slider__button_next(@click="slide('next')")
+            .slider__button-container
+                .slider__button-img-wrap
+                    img(:src="nextButtonWorks[index].photo", alt="work").slider__button-pic
