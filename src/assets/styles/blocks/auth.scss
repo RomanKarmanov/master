@@ -61,6 +61,9 @@
 #checkbox {
     opacity: 0;
 }
+#checkbox:checked+ .checkbox-elem .svg-checkbox {
+    opacity: 1;
+}
 .checkbox-elem {
     width: 20px;
     height: 20px;
@@ -73,6 +76,7 @@
         font-style: normal;
         font-size: 16px;
         color: #fff;
+        user-select: none;
     }
 }
 .svg-checkbox {
@@ -80,6 +84,7 @@
     height: 10px;
     margin: auto;
     fill: #fff;
+    opacity: 0;
 }
 .switch__title {
     font-family: 'Roboto';
@@ -87,6 +92,7 @@
     font-style: normal;
     font-size: 16px;
     color: #fff;
+    user-select: none;
 }
 .switch {
     display: flex;
@@ -98,6 +104,9 @@
 }
 .input_swith {
     opacity: 0;
+}
+.input_swith:checked+ .swith_dot:after {
+    opacity: 1;
 }
 .swith_dot {
     width: 20px;
@@ -116,6 +125,7 @@
         width: 10px;
         border-radius: 50%;
         background-color: #0548be;
+        opacity: 0;
     }
 }
 .swith__text {
@@ -125,6 +135,7 @@
     font-style: normal;
     font-size: 16px;
     color: #fff;
+    user-select: none;
 }
 .auth-btns {
     margin-top: 40px;
