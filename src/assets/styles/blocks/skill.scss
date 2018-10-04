@@ -3,6 +3,9 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    @include tablets {
+        margin-top: 50px;
+    }
     &__caption {
     font-family: 'Sansus';
     font-weight: normal;
@@ -37,6 +40,9 @@
 }
 .skill_list {
     display: flex;
+    @include tablets {
+        justify-content: center;
+    }
     
 }
 .skill_titel-ability {
@@ -44,13 +50,16 @@
         font-weight: 500;
         font-style: normal;
         font-size: 28px;
+        @include tablets {
+            text-align: center;
+        }
+        
 }
 .skill {
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     position: relative;
-    
 }
 .circle {
     fill:transparent;

@@ -7,12 +7,34 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include tablets {
+        height: 230px;
+    }
 }
 .footer_block {
     display: flex;
+    @include tablets{
+        flex-direction: column;
+        
+    }
+    
 }
 .footer_elem {
     width: 100%;
+    
+    
+}
+.footer_elem_line {
+    @include tablets{
+        &:after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 90%;
+            background-color: #494c54;
+            margin: 0px 5%;
+        }
+    }
 }
 .footer_text {
     margin: 30px 30px;
@@ -27,10 +49,15 @@
     border-right: 1px solid #494c54;
     padding: 0px 30px;
     height: 60%;
+    @include tablets {
+        border:none;
+    }
 }
 .footer_nav {
     margin-top: 30px;
-    
+    @include tablets {
+        margin-top: 20px;
+    }
 
 }
 .nav_list {

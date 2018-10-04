@@ -35,6 +35,10 @@
     z-index: 1;
     width: 580px;
     height: 290px;
+    @include tablets {
+        height: 400px;
+        width: 350px;
+    }
     &:after {
         content: '';
         display: block;
@@ -56,6 +60,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    @include tablets {
+        height: 30%;
+    }
+    
 }
 .contact_titel {
     margin-top: 40px;
@@ -67,7 +75,9 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+    @include tablets {
+        margin-top: 30px;
+    }
     &:after {
         content: '';
         width: 90px;
@@ -75,6 +85,10 @@
         background-color: #878e9e;
         display: block;
         margin: 30px 0px;
+        @include tablets{
+            margin-bottom: 10px;
+            margin-top: 20px
+        }
     }
 }
 .contact_list {
@@ -82,12 +96,25 @@
     flex-wrap: wrap;
     height: 50%;
     padding: 0px 30px;
+    @include tablets {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 70%;
+        justify-content: space-around;
+    }
 }
 .contact_item {
     width: 50%;
     display: flex;
     height: 45px;
     align-items: center;
+    @include tablets {
+        margin-bottom: 20px;
+        width: 100%;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
 }
 .svg_contact {
     width: 45px;
@@ -102,4 +129,7 @@
     font-size: 16px;
     text-decoration: none;
     color: #616674;
+    @include tablets {
+        
+    }
 }

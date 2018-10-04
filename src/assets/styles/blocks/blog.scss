@@ -16,11 +16,15 @@
     position: relative;
     display: flex;
     width: 100%;
+    
 }
 .topics {
     background-color: #faf8f0;
     width: 20%;
-    
+    padding: 70px 0px;
+    @include tablets {
+        display: none;
+    }
 }
 .thems_list {
     height: 100%;
@@ -52,12 +56,16 @@
 }
 .blog_topics_list {
     width: 80%;
-    height: 1200px;
-    overflow: hidden;
+    padding: 70px 0px;
     background-color: #faf8f0;
     padding-left:120px;
     padding-right:180px;
-    
+    @include tablets {
+        width: 100%;
+        padding: 0 5%;
+        padding-bottom: 150px;
+        padding-top: 5%;
+    }
 }
 .theme_point {
     padding-bottom: 70px;

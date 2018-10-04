@@ -1,5 +1,9 @@
 .presentation-work {
     height: 100vh;
+    @include tablets {
+      height:1350px;
+    }
+    
 }
 .slider {
     display: grid;
@@ -9,10 +13,17 @@
         / 1fr 1fr;
     height: 100%;
     background-color: #e3e2de;
+    @include tablets {
+      grid-template:
+        "display" 60%
+        "info" 20%
+        "buttons" 20%
+    }
 }
 .slider__display {
     grid-area: display;
     margin: auto;
+    
 }
 .slider__buttons {
     grid-area: buttons;
