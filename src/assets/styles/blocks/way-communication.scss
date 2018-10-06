@@ -8,7 +8,7 @@
         height: 35%;
     }
     @include phones {
-        height: 30%;
+        height: 25%;
     }
 }
 .way-communication_me {
@@ -19,7 +19,9 @@
     text-align: center;
     z-index: 1;
     position: relative;
-    
+    @include phones {
+        height: 466px;
+    }
     &:after {
         content: '';
         width: 100%;
@@ -40,6 +42,10 @@
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
+    @include phones {
+        font-size: 21px;
+        margin-top: 40px;
+    }
     &:after {
         content: '';
         height: 3px;
@@ -72,15 +78,10 @@
     background-color: rgba(255,255,255, .07);
     z-index: 1;
     padding: 15px 15px;
-    // &:after {
-    //     content: '';
-    //     width: 100%;
-    //     height: 100%;
-    //     display: block;
-        
-    //     position: absolute;
-    //     z-index: -1;
-    // }
+    @include phones {
+        font-size: 14px;
+    }
+    
 }
 .textarea {
     width: 80%;
@@ -90,7 +91,7 @@
     color: #959898;
     padding: 15px 15px;
     resize: none;
-    outline: none
+    outline: none;
 }
 .btn {
     height: 45px;
@@ -107,4 +108,7 @@
         color:#fff;
         border: none;
     }
+}
+.communication .arrow_up {
+    margin-top: 50px;
 }

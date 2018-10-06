@@ -6,7 +6,7 @@
         height: 1600px;
     }
     @include phones {
-        height: 2000px;
+        height: 1850px;
     }
 }
 .what-about-me {
@@ -33,6 +33,9 @@
     font-family: 'Sansus';
     font-size: 63px;
     color:#fff;
+    @include phones {
+        font-size: 35px;
+    }
 }
 .teachers {
     display: flex;
@@ -63,6 +66,9 @@
     font-family: 'Roboto';
     font-size: 16px;
     text-align: left;
+    @include phones {
+        font-size: 14px;
+    }
 }
 .name_founder {
     font-weight: bold;
@@ -71,6 +77,9 @@
     font-size: 16px;
     color: #fff;
     margin-top: 30px;
+    @include phones {
+        font-size: 14px;
+    }
 }
 .founder_loftschool {
     font-weight: normal;
@@ -78,6 +87,9 @@
     font-family: 'Roboto';
     font-size: 16px;
     color: #fff;
+    @include phones {
+        font-size: 14px;
+    }
 }
 
 .arrow_up {
