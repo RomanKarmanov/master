@@ -36,6 +36,9 @@
     @include tablets {
         width: 100%;
     }
+    @include phones {
+        text-align: center;
+    }
     &__content {
         width: 100%;
         display: flex;
@@ -62,6 +65,10 @@
     @include pc {
         max-width: 100%;
         
+    }
+    @include phones {
+        width: 100%;
+        padding: 5% 5%;
     }
     &__avatar {
        display: flex;
@@ -95,6 +102,9 @@
     font-weight: normal;
     font-style: normal;
     font-size: 35px;
+    @include phones {
+        margin-top: 30px;
+    }
 }
 }
 .right_block {
@@ -105,5 +115,8 @@
     @include tablets {
         background-color: #fff;
         width: 100%;
+    }
+    @include phones {
+        background-color: #f4f5f0;
     }
 }

@@ -63,8 +63,11 @@
     @include tablets {
         width: 100%;
         padding: 0 5%;
-        padding-bottom: 150px;
+        margin-bottom: 150px;
         padding-top: 5%;
+    }
+    @include phones {
+        margin-bottom: 320px;
     }
 }
 .theme_point {

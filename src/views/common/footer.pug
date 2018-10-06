@@ -1,8 +1,8 @@
 footer.footer.footer_blog.footer_work.footer_about
       ul.footer_block
-        li.footer_elem.footer_elem_line
+        li.footer_elem.footer_elem-start
           .footer_text Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
-        li.footer_elem
+        li.footer_elem.footer_elem-mid
           .footer_elem_center
             .footer_nav
               nav.nav
@@ -17,9 +17,9 @@ footer.footer.footer_blog.footer_work.footer_about
                     a.nav_link(href='#') Авторизация
             .footer_social
               include ../common/social.pug
-        li.footer_elem
+        li.footer_elem.footer_elem-end
           .footer_contact
-            ul.footer_contact
+            ul.footer_contact_list
               li.footer_contact_item
                 a.footer_contact__link(href="skype:way-g5524") way-g5524
               li.footer_contact_item
@@ -28,5 +28,5 @@ footer.footer.footer_blog.footer_work.footer_about
                 a.footer_contact__link(href="way_g@mail.ru") way_g@mail.ru
               li.footer_contact_item
                 a.footer_contact__link(href="#") Сосногорск, 6 микрорайон, д. 1
-      .footer_copyright
-        include ../common/made_author.pug
+        .footer_copyright
+          include ../common/made_author.pug

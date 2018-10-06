@@ -1,21 +1,44 @@
 .footer {
     position: absolute;
     bottom: 0;
+    right: 0;
+    left: 0;
+
     width: 100%;
-    height: 185px;
+    height: 200px;
     background-color: #1c1f29;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // @include pc {
+    //     height: 220px;
+    // }
     @include tablets {
-        height: 230px;
+        height: 280px;
+    }
+    @include phones {
+        height: 445px;
     }
 }
 .footer_block {
-    display: flex;
+    position: relative;
+    display: grid;
+    grid-template: 
+        "text nav link"
+        "copyright copyright copyright"
+        /1fr 1fr 1fr;
+    
     @include tablets{
-        flex-direction: column;
-        
+
+        grid-template:
+            "text text"
+            "nav link"
+            "copyright copyright"/ 1fr 1fr;
+
+        }
+    @include phones {
+        grid-template: 
+            "text"
+            "nav"
+            "link"
+            "copyright" / 1fr;
     }
     
 }
@@ -24,8 +47,10 @@
     
     
 }
-.footer_elem_line {
+.footer_elem-start {
+    grid-area: text;
     @include tablets{
+        text-align: center;
         &:after {
             content: '';
             display: block;
@@ -35,6 +60,12 @@
             margin: 0px 5%;
         }
     }
+}
+.footer_elem-mid {
+    grid-area: nav;
+}
+.footer_elem-end {
+    grid-area: link;
 }
 .footer_text {
     margin: 30px 30px;
@@ -52,17 +83,43 @@
     @include tablets {
         border:none;
     }
+    @include phones {
+        padding: 0px;
+       
+        &:after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 90%;
+            background-color: #494c54;
+            margin: 0px 5%;
+            @include phones {
+                margin-top: 20px;
+            }
+        }
+    }
 }
 .footer_nav {
     margin-top: 30px;
     @include tablets {
         margin-top: 20px;
     }
-
+    @include phones {
+       display: flex;
+       justify-content: center;
+    }
+}
+.nav {
+    @include phones {
+        width: 100%;
+    }
 }
 .nav_list {
-    display: flex;
     
+    display: flex;
+    @include phones {
+        justify-content: space-around;
+    }
 }
 .nav_link {
     text-decoration: none;
@@ -72,9 +129,16 @@
     font-weight: bold;
     font-style: normal;
     font-size: 16px;
+    @include phones {
+        margin-right: 0px;
+    }
 }
 .footer_social {
     margin-top: 30px;
+    @include phones {
+        display: flex;
+        justify-content: center;
+    }
 }
 .footer_social .social_footer {
     fill: #8e8f94;
@@ -84,7 +148,15 @@
     }
 }
 .footer_contact {
-    margin: 30px 30px;
+    margin:30px 30px;
+    @include phones {
+        margin: 20px 0px;
+    }
+}
+.footer_contact_list {
+    @include phones {
+        text-align: center;
+    }
 }
 .footer_contact_item {
     margin-bottom: 5px;
@@ -104,12 +176,45 @@
 .footer_copyright {
     height: 38px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: #083c96;
     font-family: 'Roboto';
     font-weight: 300;
     font-style: normal;
     font-size: 16px;
+    grid-area: copyright;
+    position: relative;
+    @include phones {
+        height: 70px;;
+    }
+}
+.contact .footer_about {
+    background-color: initial;
+    z-index: 1;
+    position: relative;
+    &:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        background-color: #1c1f29;
+        opacity: 0.85;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        // grid-area:text / nav / link / copyright;
+
+    }
+}
+.footer_author {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include tablets {
+        width: 100%;
+    }
 }
