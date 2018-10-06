@@ -1,11 +1,19 @@
 .header-about {
-    background: url(assets/images/bg/hero.jpg) center center/cover no-repeat;
+    background: url(assets/images/bg/bg_no_night.png) bottom center/cover no-repeat;
     height: 100vh;
     position: relative;
+    z-index: 20;
+    overflow: hidden;
+}
+.video {
+    width: 1950px;
+    height: 1100px;
+    z-index: -50;
 }
 .about_social {
     position: absolute;
     margin: 30px 30px;
+    z-index: 50;
 }
 .about_author {
     background: url(assets/images/bg/vectorStar.png) center center/cover no-repeat;
