@@ -22,13 +22,13 @@
 .my-work {
     position: absolute;
     bottom: 0;
-    height: 260px;
+    height: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
     z-index: 1;
     align-items: flex-end;
-    clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 40%, 100% 0, 100% 100%, 0 100%, 0 0);
     &:after {
         content: '';
         display: block;

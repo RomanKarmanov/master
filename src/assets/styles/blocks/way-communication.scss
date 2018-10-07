@@ -110,5 +110,6 @@
     }
 }
 .communication .arrow_up {
-    margin-top: 50px;
+    @include phones {
+        margin-top: 50px;}
 }
