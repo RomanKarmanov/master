@@ -1,7 +1,8 @@
 .works {
-    background: url(assets/images/bg/hero.jpg) center center/cover no-repeat;
+    // background: url(assets/images/bg/hero.jpg) center center/cover no-repeat;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .works .arrow  {

@@ -7,12 +7,13 @@ block variables
 
 block content
   header.header-about
-    video.video(src="night.mp4" autoplay loop)
+    img.header_bg(src="assets/images/bg/bg_no_night.png")
+    video.video(src="assets/video/night.mp4" autoplay loop)
     .about_social
       include ../common/social.pug
     .about_author
       include ../common/author.pug
-    svg.burger
+    svg.burger#burger
       use(xlink:href="assets/images/icons/sprite.svg#hamburger")
     .arrow
       svg.about_arrow-dawn

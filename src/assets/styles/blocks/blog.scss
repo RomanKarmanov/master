@@ -1,5 +1,5 @@
 .blog {
-    background: url(assets/images/bg/hero.jpg) center center/cover no-repeat;
+    // background: url(assets/images/bg/hero.jpg) center center/cover no-repeat;
     height: 650px;
     width: 100%;
     position: relative;
@@ -22,12 +22,16 @@
     background-color: #faf8f0;
     width: 20%;
     padding: 70px 0px;
+    position: sticky;
+    top: 0;
+    
     @include tablets {
         display: none;
     }
 }
 .thems_list {
     height: 100%;
+    
 }
 .topics_item {
     padding-right: 18px;

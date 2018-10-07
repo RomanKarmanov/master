@@ -1,9 +1,16 @@
 .header-about {
-    background: url(assets/images/bg/bg_no_night.png) bottom center/cover no-repeat;
+    // background: url(assets/images/bg/bg_no_night.png) bottom center/cover no-repeat;
     height: 100vh;
     position: relative;
     z-index: 20;
     overflow: hidden;
+}
+.header_bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 40%;
 }
 .video {
     width: 1950px;
@@ -12,7 +19,8 @@
 }
 .about_social {
     position: absolute;
-    margin: 30px 30px;
+    top: 30px;
+    left: 30px;
     z-index: 50;
 }
 .about_author {

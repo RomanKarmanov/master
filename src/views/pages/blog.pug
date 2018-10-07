@@ -7,11 +7,13 @@ block variables
 
 block content
     header.blog
+        img.header_bg(src="assets/images/bg/bg_no_night.png")
+        video.video(src="assets/video/night.mp4" autoplay loop)
         .about_social
             include ../common/social.pug
         .about_author
             include ../common/author.pug
-        svg.burger
+        svg.burger#burger
             use(xlink:href="assets/images/icons/sprite.svg#hamburger")
         svg.triangles(viewBox="0 0 1200 108" preserveAspectRatio="xMinYMax")
             polygon.triangleBlog(points="0,0 0,108 601,108 601,105")

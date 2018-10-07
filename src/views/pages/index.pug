@@ -7,9 +7,11 @@ block variables
 
 block content
   section.welcome
+    img.header_bg(src="assets/images/bg/bg_no_night.png")
+    video.video(src="assets/video/night.mp4" autoplay loop)
     .welcome_authorize
-      a.welcome_btn(href="#") Авторизоваться
-    .auth
+      a.welcome_btn#welcome_btn(href="#") Авторизоваться
+    .auth#auth
       .auth-title АВТОРИЗУЙТЕСЬ
       .auth-input__login
         .svg-auth_background
@@ -38,9 +40,9 @@ block content
           .swith_dot
           .swith__text Не уверен
       .auth-btns
-        input(type="button", value="На главную").button
-        input(type="button", value="Войти").button
-    .welcome_block
+        input#btn-main(type="button", value="На главную").button
+        input#btn-enter(type="button", value="Войти").button
+    .welcome_block#welcome_block
       .welcome_author-elem
         include ../common/author.pug
       .welcome_social-elem

@@ -1,1 +1,1 @@
-console.log("auth module loaded");
+import "./modules/flip";
