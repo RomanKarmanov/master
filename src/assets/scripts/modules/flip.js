@@ -5,9 +5,12 @@ let btnMain = document.querySelector("#btn-main");
 
 welcomeBtn.addEventListener("click", function(){
     welcomeBlock.style = "display:none";
-    auth.style = "display:flex";
     welcomeBtn.style = "display:none";
-    // auth.style = "transform: rotateY(180deg)";
+    // auth.style = "transform: translate(-50%, -50%) rotateY(180deg);";
+    auth.style = "display:flex";
+    // welcomeBlock.style = "transform: translate(-50%, -50%) rotateY(180deg)";
+    
+
 });
 
 btnMain.addEventListener("click", function(){

@@ -3,7 +3,7 @@
     // top:400px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -11,6 +11,10 @@
     height: 395px;
     width: 380px;
     z-index: 1;
+    transform-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transition: all 1.2s ease;
+    transform: translate(-50%, -50%) rotateY(0deg);
     display: none;
     &:after {
         content: '';
