@@ -45,6 +45,7 @@
     text-align: center;
     height: 395px;
     width: 380px;
+    backface-visibility: hidden;
     &:after {
         content: '';
         position: absolute;

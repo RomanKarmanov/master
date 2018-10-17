@@ -12,16 +12,16 @@
     }
 }
 .way-communication_me {
-    height: 500px;
+    height: auto;
     width: 380px;
     display: flex;
     flex-direction: column;
     text-align: center;
     z-index: 1;
     position: relative;
-    @include phones {
-        height: 466px;
-    }
+    // @include phones {
+    //     height: 466px;
+    // }
     &:after {
         content: '';
         width: 100%;

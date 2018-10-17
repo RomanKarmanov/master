@@ -22,7 +22,7 @@
     background-color: #faf8f0;
     width: 20%;
     padding: 70px 0px;
-    
+    z-index: 0;
     
     
     @include tablets {
@@ -30,10 +30,16 @@
     }
 }
 .thems_list {
-    // height: 100%;
-    position: sticky;
+    height: auto;
+    max-width: 360px;
+    @include pc {
+        max-width: 200px;
+    }
+}
+.fixed {
+    position: fixed;
     top: 0;
-    z-index: 11111;
+
 }
 .topics_item {
     padding-right: 18px;

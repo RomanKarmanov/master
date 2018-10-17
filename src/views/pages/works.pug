@@ -18,9 +18,6 @@ block content
     .arrow
       svg.about_arrow-dawn.arrow-works
         use(xlink:href="assets/images/icons/sprite.svg#arrow_down")
-    //- svg.triangles.triangles-works(viewBox="0 0 1200 240" preserveAspectRatio="xMinYMax")
-    //-     polygon.triangleBlog(points="0,0 0,100000 601,108 601,105")
-    //-     polygon.triangleBlog(points="1200,0 1200,100000 599,108 599,105")
     .my-work
       .my-work__star
         img.star_img(src="assets/images/bg/stars2.png", alt="star")
@@ -52,15 +49,18 @@ block content
   .way-communication
     .way-communication_me
       .way-communication_caption СВЯЗАТЬСЯ СО МНОЙ
-      form.forma
+      form.forma#forma
         lebel.lebel
-          input.input(type="text" name="name" placeholder="Ваше имя")
+          input.input(type="text" name="name" placeholder="Ваше имя" required)
+          .error
         lebel.lebel
-          input.input(type="email", name="email" placeholder="Ваш email")
+          input.input(type="email", name="email" placeholder="Ваш email" required)
+          .error
         lebel.lebel
-          textarea.textarea(name="textarea" placeholder="Ваше сообщение")
+          textarea.textarea(name="textarea" placeholder="Ваше сообщение" required)
+          .error
         lebel.lebel
-          input.btn.btn_send(type="button" value="Отправить")
+          input.btn.btn_send#send(type="button" value="Отправить")
           input.btn.btn_clean(type="reset" value="Очистить")
   .arrow_up
     svg.svg_star_three
