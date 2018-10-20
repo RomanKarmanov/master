@@ -1,15 +1,17 @@
 <template lang="pug">
-    h1.title Обо мне
-    skillsRow(
-        v-for="type in types"
-        :key="type.id"
-        :type="type"
-        :skills="skills"
+    div
+        h1.title-about Обо мне
+        skillsRow(
+            v-for="type in types"
+            :key="type.id"
+            :type="type"
+            :skills="skills"
     )
 </template>
 <script>
 import skillsRow from './skillsRow';
 export default {
+    
     components: {
         skillsRow
     },

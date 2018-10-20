@@ -1,13 +1,16 @@
 <template lang="pug">
-    .skills
-        .skills-title {{type.name}}
-        table.skills-list
-            skillitem(
-                v-for="skill in skills"
-                :key="skill.id"
-                v-if="skill.category === type.id"
-                :skill="skill"
-            )
+.skills
+    .skills-title {{type.name}}
+    table.skills-list
+        skillitem(
+            v-for="skill in skills"
+            :key="skill.id"
+            v-if="skill.category === type.id"
+            :skill="skill"
+        )
+        skillitem(
+            :editmode="true"
+        )
 </template>
 <script>
 import skillitem from './skillitem';
